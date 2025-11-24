@@ -23,5 +23,4 @@ const procesarImpuestos = function() {
     return totalImpuesto;
 };
 
-// Llamada de ejemplo (opcional, puedes quitarla si solo necesitas las funciones)
-// alert("El impuesto total acumulado es: " + procesarImpuestos());
+alert("El impuesto total acumulado es: " + procesarImpuestos());
