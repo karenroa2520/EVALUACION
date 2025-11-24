@@ -38,7 +38,7 @@ body {
     text-align: center; /* Centra horizontalmente los bloques dentro del contenedor */
 }
 
-.Componentes__bloque {
+.ejer__bloque {
     display: inline-block; /* Permite mostrar varios bloques en línea */
     vertical-align: top; /* Alinea los bloques desde la parte superior */
     background-color: var(--main-bg-componentes); /* Usa la variable para el color de fondo */
@@ -55,7 +55,7 @@ body {
 /* ====================== */
 /* EFECTO HOVER EN BLOQUE */
 /* ====================== */
-.Componentes__bloque:hover {
+.ejer__bloque:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño del bloque al pasar el cursor */
 }
 
@@ -66,7 +66,7 @@ body {
     margin-bottom: 10px; /* Espaciado debajo del título */
 }
 
-.Componentes__bloque a {
+.ejer__bloque a {
     display: inline-block; /* Se comporta como un bloque en línea */
     padding: 10px 15px; /* Espaciado interno del botón */
     background-color: var(--main-bg-botones); /* Color de fondo definido en variables */
@@ -79,6 +79,6 @@ body {
 /* ====================== */
 /* EFECTO HOVER EN BOTÓN */
 /* ====================== */
-.Componentes__bloque a:hover {
+.ejer__bloque a:hover {
     background-color: var(--main-bg-botonClickeable); /* Cambia a un color más oscuro al pasar el cursor */
 }
