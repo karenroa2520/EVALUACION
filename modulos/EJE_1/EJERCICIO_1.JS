@@ -48,5 +48,6 @@ let resultado = calcularPromedio(notas);
 alert("Promedio final:", resultado.promedio.toFixed(2));
 alert("Categoría de rendimiento:", resultado.rendimiento);
 
-// Si estás en navegador, también puedes usar alert():
-// alert(`Promedio: ${resultado.promedio.toFixed(2)}\nRendimiento: ${resultado.rendimiento}`);
+
+// quiero que lo hagas mas sencillo por que seria la primera clase de programacion no quiero el toFixed por que 
+// no conozo esa expresion lo quiero mas sencillo per funiconal y cumpliendo con todo lo que se pide en el ejercicio
