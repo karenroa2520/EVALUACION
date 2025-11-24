@@ -1,0 +1,84 @@
+/* ====================== */
+/* VARIABLES GLOBALES EN :root */
+/* ====================== */
+:root {
+    /* Color de fondo para el contenedor general */
+    --main-bg-contenedorPrincipal: #F0F4F8; /* azul grisáceo claro */
+
+    /* Color de fondo para los componentes individuales */
+    --main-bg-componentes: #DCE3EA; /* gris azulado suave */
+
+    /* Color de fondo para los botones principales */
+    --main-bg-botones: #4A90E2; /* azul brillante */
+
+    /* Color de fondo cuando el botón está en estado hover (clickeable) */
+    --main-bg-botonClickeable: #2C5FA5; /* azul oscuro */
+}
+
+
+/* ====================== */
+/* ESTILOS GENERALES DEL BODY */
+/* ====================== */
+body {
+    margin: 0; /* Elimina los márgenes por defecto del navegador */
+    font-family: 'Segoe UI', sans-serif; /* Fuente principal utilizada en el sitio */
+    background-color: var(--main-bg-contenedorPrincipal); /* Usa la variable definida para el fondo */
+    padding: 30px; /* Espaciado interior alrededor del contenido */
+    text-align: center; /* Centra horizontalmente el texto */
+}
+
+
+.header-main__title {
+    font-size: 32px; /* Tamaño de fuente grande para el título */
+    color: black; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.Componentes {
+    text-align: center; /* Centra horizontalmente los bloques dentro del contenedor */
+}
+
+.Componentes__bloque {
+    display: inline-block; /* Permite mostrar varios bloques en línea */
+    vertical-align: top; /* Alinea los bloques desde la parte superior */
+    background-color: var(--main-bg-componentes); /* Usa la variable para el color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil para resaltar el bloque */
+    width: 300px; /* Ancho fijo del bloque */
+    margin: 10px; /* Espaciado externo entre bloques */
+    padding: 20px; /* Espaciado interno del contenido */
+    box-sizing: border-box; /* Incluye borde y padding dentro del ancho total */
+    text-align: center; /* Centra el contenido dentro del bloque */
+    transition: transform 0.3s ease; /* Transición suave al aplicar transformaciones */
+}
+
+/* ====================== */
+/* EFECTO HOVER EN BLOQUE */
+/* ====================== */
+.Componentes__bloque:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del bloque al pasar el cursor */
+}
+
+
+.Componentes__title {
+    font-size: 20px; /* Tamaño medio del texto */
+    color: #21092b; /* Color oscuro para mayor contraste */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.Componentes__bloque a {
+    display: inline-block; /* Se comporta como un bloque en línea */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: var(--main-bg-botones); /* Color de fondo definido en variables */
+    color: black; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes suavemente redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color de fondo */
+}
+
+/* ====================== */
+/* EFECTO HOVER EN BOTÓN */
+/* ====================== */
+.Componentes__bloque a:hover {
+    background-color: var(--main-bg-botonClickeable); /* Cambia a un color más oscuro al pasar el cursor */
+}
