@@ -1,16 +1,16 @@
-// Función declarada que recibe un arreglo de notas
+// Función que recibe un arreglo de notas y calcula el promedio y el rendimiento
 function calcularPromedio(notas) {
     let suma = 0;
 
-    // Usamos un ciclo para recorrer el arreglo y sumar las notas
+    // Sumamos todas las notas
     for (let i = 0; i < notas.length; i++) {
-        suma += notas[i];
+        suma = suma + notas[i];
     }
 
     // Calculamos el promedio
     let promedio = suma / notas.length;
 
-    // Evaluamos el rendimiento con condicionales
+    // Decidimos el rendimiento según el promedio
     let rendimiento;
     if (promedio >= 4.5) {
         rendimiento = "Alto";
@@ -20,34 +20,28 @@ function calcularPromedio(notas) {
         rendimiento = "Bajo";
     }
 
-    // Retornamos un objeto con el promedio y el nivel de rendimiento
+    // Devolvemos los dos valores en un objeto
     return {
         promedio: promedio,
         rendimiento: rendimiento
     };
 }
 
-// --- Código para interactuar con el usuario (en consola o navegador) ---
-
-// Pedimos la cantidad de notas
+// Pedimos cuántas notas va a ingresar el usuario
 let cantidad = parseInt(prompt("¿Cuántas notas quieres ingresar?"));
 
-// Creamos un arreglo vacío para guardar las notas
+// Creamos una lista vacía para guardar las notas
 let notas = [];
 
-// Pedimos cada nota usando un ciclo
+// Pedimos cada nota una por una
 for (let i = 0; i < cantidad; i++) {
-    let nota = parseFloat(prompt(`Ingresa la nota ${i + 1}:`));
-    notas.push(nota);
+    let nota = parseFloat(prompt("Ingresa la nota " + (i + 1) + ":"));
+    notas[i] = nota;  // así guardamos la nota sin usar .push()
 }
 
-// Llamamos a la función
+// Usamos la función para calcular el resultado
 let resultado = calcularPromedio(notas);
 
-// Mostramos el resultado
-alert("Promedio final:", resultado.promedio.toFixed(2));
-alert("Categoría de rendimiento:", resultado.rendimiento);
-
-
-// quiero que lo hagas mas sencillo por que seria la primera clase de programacion no quiero el toFixed por que 
-// no conozo esa expresion lo quiero mas sencillo per funiconal y cumpliendo con todo lo que se pide en el ejercicio
+// Mostramos los resultados
+alert("Tu promedio es: " + resultado.promedio);
+alert("Tu rendimiento es: " + resultado.rendimiento);
